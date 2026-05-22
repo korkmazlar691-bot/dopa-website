@@ -3,115 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dopa - Akademik Partnerin ve Akıllı Asistanın</title>
+    <title>Dopa - Akademik Partnerin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <nav>
-        <div class="container">
-            <div class="logo"><img src="assets/logo.png" alt="Dopa Logo" class="logo-img"></div>
-            <ul class="nav-links">
-                <li><a href="#features">Özellikler</a></li>
-                <li><a href="#about">Uygulama Nedir?</a></li>
-                <li><a href="#contact">Destek</a></li>
-                <li><a href="https://instagram.com/dopaapp" target="_blank" class="insta-link"><i data-lucide="instagram"></i></a></li>
-            </ul>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Dopa Logo" class="logo-img">
+            </a>
+            <div class="nav-right">
+                <a href="https://www.instagram.com/dopaasistan/" target="_blank" class="nav-icon" aria-label="Instagram">
+                    <i data-lucide="instagram"></i>
+                </a>
+                <a href="#download" class="btn btn-primary btn-sm">Hemen İndir</a>
+            </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
+    <main class="hero">
+        <div class="container hero-container">
             <div class="hero-content">
-                <span class="badge">Akademik Başarın İçin AI Desteği</span>
+                <div class="badge">Kampüs Yaşam Asistanı</div>
                 <h1>Eğitimde Yeni Nesil: <span>DoPa AI</span></h1>
-                <p>Notlarını yükle, fotoğraflarını çek ve bırak Dopa senin için ders anlatsın, testler hazırlasın ve akademik yolculuğunda sana mentorluk yapsın.</p>
-                <div class="hero-btns">
-                    <a href="#download" class="btn btn-primary">Hemen İndir</a>
-                    <a href="#features" class="btn btn-secondary">Keşfet</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="glass-card">
-                    <img src="assets/hero-bg.png" alt="Dopa App Mockup">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Neden DoPa?</h2>
-                <p>Öğrenciler için özel olarak tasarlanmış en güçlü özellikler.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="sparkles"></i></div>
-                    <h3>Yapay Zeka Destekli Ders</h3>
-                    <p>Karmaşık konuları saniyeler içinde basitleştirir, sana özel anlatır.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="file-text"></i></div>
-                    <h3>PDF & Görsel Tarama</h3>
-                    <p>Notlarının fotoğrafını çek, Dopa içindeki bilgileri anında öğrensin.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="pencil-ruler"></i></div>
-                    <h3>İnteraktif Testler</h3>
-                    <p>Kendi notlarından veya seçtiğin konulardan 10 soruluk özel denemeler oluştur.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="wallet"></i></div>
-                    <h3>Öğrenci Finans Takibi</h3>
-                    <p>Gelir ve giderlerini yönet, akademik bütçeni kontrol altında tut.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="instagram" class="instagram-section">
-        <div class="container">
-            <div class="insta-card">
-                <div class="insta-content">
-                    <h2>Bizi Instagram'da Takip Et!</h2>
-                    <p>Akademik ipuçları, motivasyon ve Dopa ile ilgili en güncel haberler için topluluğumuza katıl.</p>
-                    <a href="https://instagram.com/dopaapp" target="_blank" class="btn btn-insta">
-                        <i data-lucide="instagram"></i> @dopaapp
+                <p>Notlarını yükle, fotoğraflarını çek ve bırak Dopa senin için ders anlatsın, testler hazırlasın. Akademik yolculuğunda tamamen sana özel tasarlanmış yapay zeka asistanınla tanış.</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <i data-lucide="smartphone"></i>
+                        Uygulamayı İndir
                     </a>
                 </div>
+                <div class="features-list">
+                    <div class="feature-item"><i data-lucide="check-circle-2"></i> Kişiselleştirilmiş Ders Notları</div>
+                    <div class="feature-item"><i data-lucide="check-circle-2"></i> PDF ve Görsel Analizi</div>
+                    <div class="feature-item"><i data-lucide="check-circle-2"></i> Finans Takibi</div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="mockup-wrapper">
+                    <!-- The user's uploaded mockup -->
+                    <img src="assets/app-mockup.png" alt="Dopa App Mockup" class="app-mockup">
+                    <div class="mockup-bg-shape"></div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="logo"><img src="assets/logo.png" alt="Dopa Logo" class="logo-img"></div>
-                    <p>Akademik yolculuğunda her zaman yanındayız.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Destek</h4>
-                    <ul>
-                        <li><a href="mailto:destek@dopaapp.com">Bize Ulaşın</a></li>
-                        <li><a href="#">Sıkça Sorulan Sorular</a></li>
-                    </ul>
-                </div>
-                <div class="footer-legal">
-                    <h4>Yasal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Gizlilik Politikası</a></li>
-                        <li><a href="terms.html">Kullanım Koşulları</a></li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <img src="assets/logo.png" alt="Dopa Logo" class="footer-logo">
+                <p>&copy; 2026 DoPa. Tüm hakları saklıdır.</p>
             </div>
-            <div class="copyright">
-                &copy; 2026 DoPa Akademik Asistan. Tüm Hakları Saklıdır.
+            <div class="footer-links">
+                <a href="privacy.html">Gizlilik Politikası</a>
+                <a href="terms.html">Kullanım Koşulları</a>
+                <a href="mailto:destek@dopaapp.com">İletişim</a>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script>
         lucide.createIcons();

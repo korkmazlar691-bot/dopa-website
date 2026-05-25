@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Koşulları - Dopa</title>
+    <title>Kullanım Koşulları - DoPa Asistan</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         .legal-content { padding: 160px 0 100px; max-width: 800px; margin: 0 auto; }
-        .legal-content h1 { margin-bottom: 40px; color: var(--primary); }
-        .legal-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .legal-content p { margin-bottom: 20px; color: var(--text-light); }
-        .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: 600; }
+        .legal-content h1 { margin-bottom: 40px; color: var(--text-main); }
+        .legal-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 20px; color: var(--text-main); }
+        .legal-content p { margin-bottom: 20px; color: var(--text-muted); }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+        .back-link:hover { color: var(--primary-dark); }
+        .date { font-weight: 600; margin-bottom: 30px; }
     </style>
 </head>
 <body>
     <div class="container legal-content">
         <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
-        <h1>Kullanım Koşulları</h1>
-        <p>Son Güncelleme: 06 Mayıs 2026</p>
+        
+        <h1>KULLANIM KOŞULLARI (TERMS OF SERVICE)</h1>
+        <p class="date">Son Güncelleme: 07 Nisan 2026</p>
 
-        <h2>1. Hizmet Tanımı</h2>
-        <p>doPa Akademik Asistanı; öğrencilerin derslerini, sınavlarını ve bütçelerini planlamalarına yardımcı olan AI destekli bir eğitim asistanıdır.</p>
+        <h2>1. HİZMETİN KAPSAMI</h2>
+        <p>doPa Akademik Asistanı; öğrencilerin derslerini, sınavlarını, bütçelerini planlamalarına yardımcı olmak adına Yapay Zeka (AI) destekli çözümler sunan bir eğitim asistanıdır. Uygulamanın amacı öğrencileri motive etmek ve akademik verimi artırmaktır.</p>
 
-        <h2>2. AI Kullanım Sorumluluğu</h2>
-        <p>Yapay zeka tavsiye amaçlıdır. Verilen akademik ve finansal kararlardan tamamen kullanıcı sorumludur. Asistanın hata payı (halüsinasyon) olabileceğini lütfen unutmayın.</p>
+        <h2>2. YAPAY ZEKA KULLANIMI VE LİMİTLER</h2>
+        <p>Uygulamamızdaki "doPa Asistan" (AI) hizmeti API standartlarına bağlı olarak çalışmaktadır.<br>
+        a. Sistemi aşırı istek (saniyede onlarca mesaj) yollayarak manipüle etmek veya sunucuyu yoracak spam saldırılarında bulunmak yasaktır.<br>
+        b. Yapay zeka tavsiye amaçlıdır. Verilen akademik ve finansal kararlardan tamamen kullanıcı sorumludur. Asistanın hata payı (halüsinasyon) olabileceğini lütfen unutmayın.</p>
 
-        <h2>3. Abonelik ve Ödemeler</h2>
-        <p>Ücretli abonelikler App Store ve Google Play Store üzerinden yönetilir. İptal ve iade işlemleri ilgili mağazaların kurallarına tabidir.</p>
+        <h2>3. KULLANICI SORUMLULUĞU</h2>
+        <p>Hesap bilgilerinin gizliliği ve güvenliği kullanıcının kendi sorumluluğundadır. E-mail adresinin üçüncü şahısların eline geçmesi veya şifrenin kolay tahmin edilebilir olmasından doğacak mağduriyetler hizmet sağlayıcısının sorumluluğunda değildir.</p>
 
-        <h2>4. Yasaklı Kullanım</h2>
-        <p>Sistemi manipüle etmek, aşırı yük bindirmek veya zararlı içerik göndermek hesabın kalıcı olarak askıya alınmasına neden olabilir.</p>
+        <h2>4. HİZMETLERDE DEĞİŞİKLİK</h2>
+        <p>Ekip, günün şartlarına veya sistem güncellemelerine (OpenAI GPT sürüm yenilikleri, Supabase güncellemeleri vb.) bağlı olarak önceden haber vermeksizin sistemin görünüşünü, yapısını ve bazı alt özellikleri kaldırma / değiştirme hakkını saklı tutar.</p>
 
-        <p>Kayıt olduğunuzda bu koşulları kabul etmiş sayılırsınız.</p>
+        <h2>5. HESAP ASKIYA ALMA</h2>
+        <p>Üçüncü maddede belirtilen siber ve teknolojik istismarlar, sisteme zararlı yazılım gönderme çabaları tespit edildiğinde, sistem Supabase sunucu mimarisi üzerinden ilgili IP adresini veya hesabı kalıcı olarak engelleyebilir.</p>
+
+        <p>Uygulamamıza kayıt olduğunuz andan itibaren yukarıdaki maddeleri kabul etmiş sayılırsınız.</p>
     </div>
 </body>
 </html>

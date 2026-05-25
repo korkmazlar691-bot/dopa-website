@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Dopa</title>
+    <title>Gizlilik Politikası - DoPa Asistan</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         .legal-content { padding: 160px 0 100px; max-width: 800px; margin: 0 auto; }
-        .legal-content h1 { margin-bottom: 40px; color: var(--primary); }
-        .legal-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .legal-content p { margin-bottom: 20px; color: var(--text-light); }
-        .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: 600; }
+        .legal-content h1 { margin-bottom: 40px; color: var(--text-main); }
+        .legal-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 20px; color: var(--text-main); }
+        .legal-content p { margin-bottom: 20px; color: var(--text-muted); }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+        .back-link:hover { color: var(--primary-dark); }
+        .date { font-weight: 600; margin-bottom: 30px; }
     </style>
 </head>
 <body>
     <div class="container legal-content">
         <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
-        <h1>Gizlilik Politikası</h1>
-        <p>Son Güncelleme: 06 Mayıs 2026</p>
+        
+        <h1>GİZLİLİK POLİTİKASI (PRIVACY POLICY)</h1>
+        <p class="date">Son Güncelleme: 07 Nisan 2026</p>
 
-        <h2>1. Veri Toplama</h2>
-        <p>doPa Akademik Asistanı, kullanıcı deneyimini iyileştirmek için sadece elzem olan kişisel verileri toplamaktadır. Ad, soyad, e-posta adresi ve giriş bilgileri asgari düzeyde saklanır.</p>
+        <h2>1. VERİ POLİTİKASI</h2>
+        <p>Bu uygulama (doPa Akademik Asistanı), kullanıcı deneyimini iyileştirmek için sadece elzem olan kişisel verileri toplamaktadır. Ad, soyad, e-posta adresi ve giriş bilgileri asgari düzeyde saklanır.</p>
 
-        <h2>2. Veri Güvenliği</h2>
-        <p>Verileriniz uçtan uca güvenli bir şekilde saklanmaktadır. Şifreleriniz okunamaz formatta (hash algoritmasıyla) tutulmaktadır. Geliştirici ekip dahi şifrelerinize erişemez.</p>
+        <h2>2. VERİ GÜVENLİĞİ VE SUPABASE</h2>
+        <p>Şifreleriniz ve kişisel verileriniz Supabase altyapısında uçtan uca güvenli bir şekilde saklanmaktadır. Supabase, dünyanın önde gelen backend otomasyon ve veritabanı sağlayıcılarından biri olup uluslararası veri koruma (GDPR) yasalarına uyum çerçevesinde şifrelerinizi okunamaz formatta (hash algoritmasıyla) tutmaktadır. Geliştirici ekip dahi şifrelerimize erişemez.</p>
 
-        <h2>3. Üçüncü Taraflar</h2>
-        <p>Sistemimize girdiğiniz notlar, bütçe bilgileri ve sınav takviminiz kesinlikle üçüncü parti reklam şirketleri ile paylaşılmaz ve satılmaz. Yapay Zeka hizmetleri, verileri sadece oturum içerisinde işler.</p>
+        <h2>3. ÜÇÜNCÜ TARAFLARLA PAYLAŞIM</h2>
+        <p>Sistemimize girdiğiniz notlar, bütçe bilgileri, sınav takviminiz ve kişisel iletişim adresleriniz kesinlikle üçüncü parti reklam şirketleri, analiz platformları veya tanınmayan markalarla ASLA paylaşılmaz ve satılmaz. Yapay Zeka destek hizmetleri, verileri sadece oturum içerisinde işleyip anında unutacak şekilde entegre edilmiştir.</p>
 
-        <h2>4. Hesap Silme</h2>
-        <p>Kullanıcı dilediği zaman uygulama içerisindeki "Hesabımı Sil" butonu ile tüm verilerini kalıcı olarak imha edebilir.</p>
+        <h2>4. BİLDİRİM VE CİHAZ İZİNLERİ</h2>
+        <p>Sınav planlarınız için cihazınızda yerel bildirimler (Local Push Notifications) kullanılmaktadır. Takvime eklenen verileriniz, uygulama aracılığıyla sizi bilgilendirmek dışında hiçbir şekilde dışarı çıkarılmaz.</p>
 
-        <p>Sorularınız için: <a href="mailto:seventea16@gmail.com">seventea16@gmail.com</a></p>
+        <h2>5. VERİ SİLME VE HESAP YÖNETİMİ</h2>
+        <p>Kullanıcı dilediği zaman doPa Asistan üzerindeki hesaplarını geri dönülmez biçimde silebilir. Bu işlem sonrası kullanıcı bazlı oluşturulan takvim verileri, Supabase üzerinden tamamen imha edilir.</p>
+
+        <p>İletişim, veri talepleri veya soru işaretleriniz için uygulamanın içerisindeki 'Destek ve Yardım' bölümünden ekibimize ulaşabilirsiniz.</p>
     </div>
 </body>
 </html>

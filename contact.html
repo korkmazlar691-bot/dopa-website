@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - DoPa Asistan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png.png" alt="DoPa Logo" class="logo-img">
+            </a>
+            <div class="nav-right">
+                <a href="index.html" class="contact-back" style="margin-bottom: 0;">
+                    <i data-lucide="arrow-left" style="width: 18px; height: 18px;"></i>
+                    <span>Ana Sayfaya Dön</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-hero">
+        <div class="container" style="display: flex; justify-content: center; width: 100%;">
+            <div class="contact-card-wrapper">
+                <div class="contact-header">
+                    <h1>Bize <span>Ulaşın</span></h1>
+                    <p>DoPa Asistan ile ilgili soru, öneri veya destek talepleriniz için aşağıdaki kanallardan bizimle iletişime geçebilirsiniz.</p>
+                </div>
+
+                <div class="contact-options">
+                    <!-- Instagram Card -->
+                    <a href="https://www.instagram.com/dopaasistan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="contact-item instagram-item">
+                        <div class="contact-item-icon" style="color: #e6683c;">
+                            <i data-lucide="instagram" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="contact-item-label">Instagram</div>
+                            <div class="contact-item-value">@dopaasistan</div>
+                        </div>
+                        <div class="contact-item-action">
+                            <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+                        </div>
+                    </a>
+
+                    <!-- Email Card -->
+                    <div class="contact-item" onclick="copyEmailAddress(event)">
+                        <div class="contact-item-icon" style="color: var(--primary);">
+                            <i data-lucide="mail" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="contact-item-label">E-posta</div>
+                            <div class="contact-item-value" id="email-text">seventea16@gmail.com</div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="contact-item-action copy-btn" title="E-postayı Kopyala" aria-label="E-postayı Kopyala" onclick="copyEmailToClipboard(event)">
+                                <i data-lucide="copy" id="copy-icon" style="width: 18px; height: 18px;"></i>
+                            </button>
+                            <a href="mailto:seventea16@gmail.com" class="contact-item-action" title="Doğrudan Mail Gönder" aria-label="Doğrudan Mail Gönder" onclick="event.stopPropagation();">
+                                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <img src="assets/logo.png.png" alt="DoPa Logo" class="footer-logo">
+                <p>&copy; 2026 DoPa Asistan. Tüm hakları saklıdır.</p>
+            </div>
+            <div class="footer-links" style="align-items: center;">
+                <a href="https://www.instagram.com/dopaasistan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram" style="display: flex; align-items: center; gap: 6px; text-decoration: none;" class="footer-ig-link instagram-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#ig-grad-footer)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="instagram-svg">
+                        <defs>
+                            <linearGradient id="ig-grad-footer" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#f09433" />
+                                <stop offset="25%" stop-color="#e6683c" />
+                                <stop offset="50%" stop-color="#dc2743" />
+                                <stop offset="75%" stop-color="#cc2366" />
+                                <stop offset="100%" stop-color="#bc1888" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    <span style="color: #dc2743; font-weight: 600; font-size: 15px;">Instagram</span>
+                </a>
+                <a href="privacy.html">Gizlilik Politikası</a>
+                <a href="terms.html">Kullanım Koşulları</a>
+                <a href="contact.html">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle" class="toast-icon" style="width: 20px; height: 20px;"></i>
+        <span id="toast-text">E-posta adresi kopyalandı!</span>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        function copyEmailAddress(event) {
+            // If the user specifically clicked the direct send email link, don't copy
+            if (event.target.closest('a')) return;
+            
+            const email = document.getElementById('email-text').textContent;
+            executeCopy(email);
+        }
+
+        function copyEmailToClipboard(event) {
+            event.stopPropagation();
+            const email = document.getElementById('email-text').textContent;
+            executeCopy(email);
+        }
+
+        function executeCopy(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                showToast("E-posta adresi panoya kopyalandı!");
+                
+                // Temporarily change copy icon to check mark
+                const copyIcon = document.getElementById('copy-icon');
+                copyIcon.setAttribute('data-lucide', 'check');
+                lucide.createIcons();
+                
+                setTimeout(() => {
+                    copyIcon.setAttribute('data-lucide', 'copy');
+                    lucide.createIcons();
+                }, 2000);
+            }, function(err) {
+                console.error('Kopyalama hatası: ', err);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toast-text');
+            toastText.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
